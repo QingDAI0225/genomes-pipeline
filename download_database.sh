@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 
+set -eo pipefail
+set -u
+
 WORK_DIR="/work/qd33/nanopore/QD_ptrap_20230908"
-cd $WORK_DIR
-mkdir MGnify_db && cd MGnify_db && 
+DB_DIR="$WORK_DIR/Mgnify_db"
+
+mkdir $DB_DIR
+cd $DB_DIR
 
 # gunc
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/gunc_db_2.0.4.dmnd.gz
