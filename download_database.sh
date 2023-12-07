@@ -32,6 +32,7 @@ wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/kegg_classe
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/continent_countries.csv
 # gtdb
 wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.0/auxillary_files/gtdbtk_r214_data.tar.gz
+tar -xvzf gtdbtk_r214_data.tar.gz
 
 #amrfinder
 wget -r -np -R "index.html*" ftp://ftp.ncbi.nlm.nih.gov:21/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/3.11/2023-02-23.1/
