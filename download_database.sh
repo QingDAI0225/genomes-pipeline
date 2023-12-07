@@ -25,7 +25,7 @@ mkdir eggnog
 tar zxvf eggnog_db.tgz -C ./eggnog/
 
 # rfam
-wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/rfam_14.9/
+wget -r -np -R "index.html*" ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/rfam_14.9/
 # kegg
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/kegg_classes.tsv
 # geo
