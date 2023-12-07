@@ -37,6 +37,6 @@ wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.0/auxil
 wget -r -np -R "index.html*" ftp://ftp.ncbi.nlm.nih.gov:21/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/3.11/2023-02-23.1/
 
 # InterProScan5.62-94.0
-wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.36-75.0/interproscan-5.62-94.0.tar.gz
-tar --extract --gzip interproscan-5.62-94.0.tar.gz
+wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.62-94.0/interproscan-5.62-94.0-64-bit.tar.gz
+tar -xvzf interproscan-5.62-94.0.tar.gz
 
