@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+#-----------------------------------------------------------
+# Run the following to run this script:
+#   srun -A chsi -p chsi -c10 --mem 20G ./download_database.sh 
+#-----------------------------------------------------------
+
+
 set -eo pipefail
 set -u
 
