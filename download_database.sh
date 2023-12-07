@@ -19,6 +19,9 @@ cd $DB_DIR
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/gunc_db_2.0.4.dmnd.gz
 # eggnog
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/eggnog_db.tgz
+mkdir eggnog
+tar zxvf eggnog_db.tgz -C ./eggnog/
+
 # rfam
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/rfam_14.9/
 # kegg
