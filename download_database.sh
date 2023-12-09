@@ -10,7 +10,7 @@ set -eo pipefail
 set -u
 
 WORK_DIR="/work/qd33/nanopore/QD_ptrap_20230908"
-DB_DIR="$WORK_DIR/Mgnify_db"
+DB_DIR="$WORK_DIR/MGnify_db"
 
 mkdir $DB_DIR
 cd $DB_DIR
