@@ -22,22 +22,22 @@ gzip -dk gunc_db_2.0.4.dmnd.gz
 # eggnog
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/eggnog_db.tgz
 mkdir eggnog
-tar zxvf eggnog_db.tgz -C ./eggnog/
+tar -zxf eggnog_db.tgz -C eggnog
 
 # rfam
-wget -r -np -R "index.html*" ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/rfam_14.9/
+wget -r -nH --cut-dirs=5 -R "index.html*" ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/rfam_14.9/ -P rfam_14.9
 # kegg
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/kegg_classes.tsv
 # geo
 wget ftp://ftp.ebi.ac.uk/pub/databases/metagenomics/genomes-pipeline/continent_countries.csv
 # gtdb
 wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.0/auxillary_files/gtdbtk_r214_data.tar.gz
-tar -xvzf gtdbtk_r214_data.tar.gz
+tar -xzf gtdbtk_r214_data.tar.gz
 
 #amrfinder
-wget -r -np -R "index.html*" ftp://ftp.ncbi.nlm.nih.gov:21/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/3.11/2023-02-23.1/
+wget -r -nH --cut-dirs=3 -R "index.html*" ftp://ftp.ncbi.nlm.nih.gov:21/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/3.11/2023-02-23.1/ -P AMRFinderPlus
 
 # InterProScan5.62-94.0
 wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.62-94.0/interproscan-5.62-94.0-64-bit.tar.gz
-tar -xvzf interproscan-5.62-94.0.tar.gz
+tar -xzf interproscan-5.62-94.0.tar.gz
 
