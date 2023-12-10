@@ -39,5 +39,5 @@ wget -r -nH --cut-dirs=3 -R "index.html*" ftp://ftp.ncbi.nlm.nih.gov:21/pathogen
 
 # InterProScan5.62-94.0
 wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.62-94.0/interproscan-5.62-94.0-64-bit.tar.gz
-tar -xzf interproscan-5.62-94.0.tar.gz
+tar -xzf interproscan-5.62-94.0-64-bit.tar.gz
 
